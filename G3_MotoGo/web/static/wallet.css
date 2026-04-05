@@ -1,0 +1,148 @@
+/* Container chính căn giữa màn hình */
+.wallet-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    color: #334155;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+/* Hàng trên dùng Flexbox để 2 card nằm ngang */
+.wallet-top-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: stretch;
+}
+
+/* Style chung cho Card */
+.wallet-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ */
+    flex: 1; /* Chia đều 50-50 */
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.card-header {
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+/* Ô hiển thị số dư */
+.balance-box {
+    background-color: #f8fafc;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.balance-box .amount {
+    color: #10b981; /* Màu xanh lục */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Form Deposit */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #64748b;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    box-sizing: border-box; /* Quan trọng để không bị tràn */
+}
+
+.btn-deposit-blue {
+    width: 100%;
+    background-color: #4f46e5; /* Màu xanh biển như trong ảnh */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Bảng lịch sử */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.transaction-table th {
+    text-align: left;
+    color: #94a3b8;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.transaction-table td {
+    padding: 15px 0;
+    border-top: 1px solid #f1f5f9;
+    font-size: 14px;
+}
+
+.pos { color: #10b981; font-weight: 600; }
+.neg { color: #ef4444; font-weight: 600; }
+
+/* Phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.page-num {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    text-decoration: none;
+    color: #334155;
+}
+
+.page-num.active {
+    background-color: #4f46e5;
+    color: white;
+    border-color: #4f46e5;
+}
+
+.prev-next {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14px;
+}

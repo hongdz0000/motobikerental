@@ -1,0 +1,126 @@
+/* NAVBAR */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #fafbfc;
+    color: #1f2937;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 60px;
+    background: linear-gradient(135deg, #1f2937, #2f3e5c);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.logo {
+    font-weight: 600;
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Nav links */
+.navbar nav a {
+    margin-right: 24px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.navbar nav a:hover {
+
+}
+
+/* Outline button */
+.btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.4);
+    font-size: 15px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.btn-outline:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Primary button */
+.btn-primary {
+    background: #4f6ef7;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #3f5ee6;
+}
+
+/* User box */
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.balance {
+    font-weight: 600;
+    font-size: 15px;
+    color: #e5e7eb;
+}
+
+.navbar .user-box .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.4);
+}
+
+.profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 220px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    padding: 8px 0;
+    display: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.profile-dropdown a {
+    display: block;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: black;   /* Dark slate */
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.profile-dropdown a:hover {
+    background: #f3f4f6;
+    color: black;   /* Slightly darker on hover */
+}
+
+.profile-dropdown .divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 8px 0;
+}
+
+.profile-dropdown.show {
+    display: block;
+}

@@ -1,0 +1,174 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 12, 2026, 9:47:18 PM
+    Author     : thais
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #222;
+}
+
+/* Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px 30px 80px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.past-link {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #8a97a8;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Section */
+.rentals-section {
+    padding: 0 80px 80px 80px;
+}
+
+.rentals-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.rental-count {
+    font-size: 20px;
+}
+
+.sort-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sort-box label {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #8a97a8;
+}
+
+.sort-box select {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+    background: white;
+}
+
+/* Booking Cards */
+.booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.booking-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.booking-info {
+    flex: 1;
+}
+
+.booking-info h3 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.booking-info p {
+    margin: 4px 0;
+    color: #666;
+}
+
+.price {
+    font-weight: 600;
+    color: #222;
+}
+
+/* Status Badge */
+.booking-status {
+    margin-left: auto;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.completed {
+    background: #e6f4ea;
+    color: #2e7d32;
+}
+
+.confirmed {
+    background: #e7f1ff;
+    color: #0b5ed7;
+}
+
+.pending {
+    background: #fff4e5;
+    color: #b26a00;
+}
+
+.cancelled {
+    background: #fdecea;
+    color: #c82333;
+}
+
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 8px 14px;
+    background: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background: #222;
+    color: white;
+}

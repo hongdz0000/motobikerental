@@ -1,0 +1,321 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #fafafa;
+    color: #222;
+}
+
+.navbar {
+    height: 64px;
+    padding: 0 40px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.page {
+    padding: 40px;
+}
+
+.layout {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* LEFT SIDE */
+.bike-info img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+}
+
+.bike-header h1 {
+    margin: 10px 0;
+}
+
+.location {
+    color: #3b6ef5;
+    font-size: 14px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6c7a89;   /* soft gray-blue like SPORTS */
+}
+
+.specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+    font-size: 14px;
+}
+
+.included ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.included li {
+    margin: 8px 0;
+}
+
+/* RIGHT SIDE */
+.booking-card {
+    position: sticky;
+    top: 96px; /* 64px navbar + spacing */
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 28px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    height: fit-content;
+}
+
+.booking-input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 44px 12px 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+
+    font-size: 14px;
+    background: #fff;
+}
+
+
+.price {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price strong {
+    display: block;
+    font-size: 32px;
+    color: #3b6ef5;
+}
+
+.field{
+    margin-bottom: 10px 16px;
+    flex: 1;
+}
+
+.time-field{
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.time-field input {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: #666;
+}
+
+.time-row label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 6px;
+    display: block;
+}
+
+
+.field input,
+.field select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.time-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #3b6ef5;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.benefits {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #2e7d32;
+}
+
+/* =========================
+   ADD-ONS SECTION (FIXED SIZE)
+   ========================= */
+
+.addons-section {
+    margin-top: 32px;
+}
+
+.addons-section h2 {
+    margin: 6px 0 20px;
+    font-size: 22px;
+}
+
+.eyebrow {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #4f6ef7;
+    margin-bottom: 4px;
+}
+
+/* GRID */
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+/* CARD */
+.addon-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: block;
+    overflow: hidden; /* Quan trọng để màu nền không tràn */
+}
+
+.addon-card:hover {
+    border-color: #3b6ef5;
+    box-shadow: 0 4px 12px rgba(59, 110, 245, 0.08);
+}
+
+/* Hide checkbox */
+.addon-card input[type="checkbox"] {
+    display: none;
+}
+
+/* Layout Content */
+.addon-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addon-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* FIX ẢNH TO TẠI ĐÂY */
+.addon-icon {
+    width: 32px !important;    /* Ép chiều rộng về 32px */
+    height: 32px !important;   /* Ép chiều cao về 32px */
+    object-fit: contain !important; /* Chống móp méo ảnh */
+    flex-shrink: 0 !important;      /* Chống bị bóp nhỏ */
+    border-radius: 4px;
+    display: block;
+}
+
+.addon-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.addon-price {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4f6ef7;
+    white-space: nowrap;
+}
+
+/* TRẠNG THÁI KHI ĐƯỢC CHỌN (HẾT LỖI ĐỎ) */
+.addon-card input:checked + .addon-content {
+    background: #f0f4ff;
+    margin: -12px -16px; /* Bù trừ với padding của card */
+    padding: 12px 16px;
+    box-shadow: inset 0 0 0 1px #3b6ef5;
+}
+
+.addon-card input:checked + .addon-content .addon-name,
+.addon-card input:checked + .addon-content .addon-price {
+    color: #3b6ef5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================
+   RENTAL POLICY
+   ========================= */
+
+.policy-section {
+    margin-top: 56px;
+}
+
+.policy-section h2 {
+    margin: 6px 0 24px;
+    font-size: 24px;
+}
+
+.policy-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.policy-list li {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.policy-icon {
+    width: 40px;
+    height: 40px;
+    background: #eef2ff;
+    color: #4f6ef7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.policy-list p {
+    margin: 0;
+    line-height: 1.5;
+}
+

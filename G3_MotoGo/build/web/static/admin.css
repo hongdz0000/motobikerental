@@ -1,0 +1,255 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 12, 2026, 10:28:37 PM
+    Author     : thais
+*/
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #fafbfc;
+    color: #1f2937;
+}
+
+.admin-header {
+    margin-bottom: 30px;
+}
+
+.admin-content {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+
+}
+
+.admin-subtitle {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Stats Grid */
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.admin-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.admin-card h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+.admin-card {
+    transition: 0.2s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.warning {
+    color: #ff9800;
+}
+
+/* Table */
+.admin-table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+    background: #f9f9f9;
+}
+
+.admin-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.status.completed {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.status.pending {
+    color: #ff9800;
+    font-weight: 600;
+}
+
+.status.approved {
+    color: #4f6ef7;
+    font-weight: 600;
+}
+
+.status.delivered {
+    color: #17a2b8;
+    font-weight: 600;
+}
+
+.status.cancelled {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.status.refunded {
+    color: #6f42c1;
+    font-weight: 600;
+}
+
+.admin-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    background: #4f6ef7;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-warning {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*admin bike form*/
+.admin-actions {
+    margin-bottom: 20px;
+}
+
+.admin-form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.upload-box {
+    border: 2px dashed #4f6ef7;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #f9f9ff;
+    transition: 0.3s;
+}
+
+.upload-box.dragover {
+    background: #eef1ff;
+    border-color: #2f4ed8;
+}
+
+.upload-box p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.upload-box span {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Đảm bảo thẻ link chiếm toàn bộ không gian của ô lưới */
+.admin-card-link {
+    display: block;
+    height: 100%;
+}
+
+/* Quan trọng: Di chuyển hiệu ứng hover từ .admin-card sang .admin-card-link 
+   để trải nghiệm mượt hơn và không bị giật khung hình */
+.admin-card-link:hover .admin-card {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+

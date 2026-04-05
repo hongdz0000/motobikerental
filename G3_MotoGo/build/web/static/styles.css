@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left section */
+.form-section {
+  width: 40%;
+  min-width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 360px;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.subtext a {
+  color: #4f63f1;
+  text-decoration: none;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f63f1;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #4f63f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4254e3;
+}
+
+.legal {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #888;
+}
+
+.legal a {
+  color: #4f63f1;
+  text-decoration: none;
+}
+
+/* Right section */
+.image-section {
+  flex: 1;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    display: none;
+  }
+
+  .form-section {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+/* Password label + forgot link row */
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.password-row label {
+  margin-bottom: 0;
+}
+
+.password-input {
+    position: relative;
+    width: 100%;
+}
+
+.password-input input {
+    width: 100%;
+    padding-right: 40px; /* space for eye */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.forgot {
+  font-size: 12px;
+  color: #4f63f1;
+  text-decoration: none;
+}
+
+/* Remember me */
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.remember input {
+  width: auto;
+  margin: 0;
+}
+
+/* Center helper text */
+.center {
+  text-align: center;
+}
+
+/* ===== Change Password Page ===== */
+
+.change-password-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; /* keep consistent with body */
+  padding: 40px 20px;
+}
+
+.change-password-container form {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.change-password-container h2 {
+  margin-bottom: 24px;
+}
+
+.change-password-container .form-group {
+  margin-bottom: 18px;
+}
+
+.change-password-container .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.change-password-container .cancel {
+  padding: 12px 16px;
+  background: #f3f3f3;
+  color: #555;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.change-password-container .cancel:hover {
+  background: #e7e7e7;
+}
+
+.change-password-container .save {
+  width: auto;
+  padding: 12px 24px;
+  background: #4f63f1;   /* same blue */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.change-password-container .save:hover {
+  background: #4254e3;
+}
+
+/* ===== Footer ===== */
+
+.site-footer {
+  background: #111827;   /* deep navy, matches premium vibe */
+  color: #d1d5db;
+  margin-top: 80px;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.footer-column a {
+  display: block;
+  color: #9ca3af;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #4f63f1;   /* your blue accent */
+}
+
+/* Bottom strip */
+.footer-bottom {
+  border-top: 1px solid #1f2937;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

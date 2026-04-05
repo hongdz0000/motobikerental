@@ -1,0 +1,113 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 12, 2026, 9:42:58 PM
+    Author     : thais
+*/
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #fafbfc;
+    color: #1f2937;
+}
+
+/* HEADER */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px 30px 80px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.past-link {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #8a97a8;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+/* SECTION */
+.rentals-section {
+    padding: 0 80px 80px 80px;
+}
+
+/* Top row */
+.rentals-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.rental-count {
+    font-size: 20px;
+}
+
+.rental-count strong {
+    font-weight: 700;
+}
+
+/* Sort box */
+.sort-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sort-box label {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #8a97a8;
+}
+
+.sort-box select {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+    background: white;
+}
+
+/* Empty state */
+.empty-state {
+    background: white;
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.empty-state h3 {
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.browse-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #4f6ef7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
