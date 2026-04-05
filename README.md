@@ -51,4 +51,8 @@ The system supports booking, managing motorbikes, and handling rental transactio
 ---
 
 ## 👨‍💻 Author
+<<<<<<< HEAD
 - GitHub: https://github.com/hongdz0000
+=======
+- GitHub: https://github.com/hongdz0000
+>>>>>>> c5f4b527d3a734cd166a686bc25ed6a4836c0f6d
