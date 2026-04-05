@@ -49,7 +49,11 @@ The system supports booking, managing motorbikes, and handling rental transactio
 (Add screenshots here if available)
 
 ---
+## 🗄️ Database Setup
 
+1. Open Microsoft SQL Server
+2. Run the script in `/database/motorbike.sql`
+3. Update database connection in the project
 ## 👨‍💻 Author
 <<<<<<< HEAD
 - GitHub: https://github.com/hongdz0000
